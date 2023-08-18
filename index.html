@@ -1,1 +1,85 @@
-<h1>도메인</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>양기술 블로그</title>
+  <meta charset="UTF-8" />
+  <!-- CSS -->
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+  <!-- 헤더(nav) -->
+  <header>
+    <div class="gnb pc">
+      <div>
+        <a href="/" class="title">
+               <span class="logo">
+                  <img id="logoImg" >
+               </span>
+            </a>
+      </div>
+      <div class="menu">
+               <!-- 추가메뉴 -->
+               <a href="/11528">개발 서적 스터디</a>
+         </div>
+    </div>
+  </header>
+  <!-- 헤더(nav) end -->
+  
+  <!-- 메인이미지 -->
+  <div class="main-slider" style="margin-top: 95px;">
+      <div class="swiper-container mainSlider">
+         <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1519px, 0px, 0px);">
+            <div class="swiper-slide" style="width: 100%;">
+          <h1 id="blogTitle" style="display: inblock;">양기술 블로그</h1>
+               <div style="background-image: linear-gradient(to bottom right, #80F5FF, #BCFFB5);">
+          </div>
+            </div>    
+         </div>
+      </div>
+   </div>
+  <!-- 메인이미지 end-->
+  
+  <!-- 게시물 리스트 -->
+  <div class="content-wrap">
+    <div class="category pc">
+      <span>
+        <input id="cat-" type="checkbox" value="ai"> 
+        <label for="cat-ai">개발서적</label>
+      </span>
+    </div>
+    <div class="col col-main">
+      <div class="posts">
+        <div class="item firstpaint">
+          <a href="https://techblog.woowahan.com/13101/">
+            <p class="author">
+              <span>Aug.18.2023</span>
+            </p>
+            <h1>[한 권으로 읽는 컴퓨터 구조와 프로그래밍] 1장. 컴퓨터 내부의 언어 체계</h1>
+            <p>컴퓨터는 어떤말을 사용할까</p>
+          </a>
+        </div>
+      </div>
+      <!-- 게시물 리스트 end-->
+      <!-- 사이드 카테고리 -->
+      <div class="pc meta-col" style="width: 190px;">
+        <div class="inner-wrapper-sticky"
+             style="position: relative;">
+          <div class="tag">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <p class="sub-title">태그</p>
+            <p><input type="checkbox">
+              <label>
+                <span class="tag-name">한 권으로 읽는 컴퓨터 구조와 프로그래밍</span>
+                <span class="tag-count">(1)</span>
+              </label>
+            </p>
+          </div>
+          <div class="recap">
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          </div>
+        </div>
+      </div>
+      <!-- 사이드 카테고리 end-->
+    </div>
+  </div>
+</body>
+</html>
