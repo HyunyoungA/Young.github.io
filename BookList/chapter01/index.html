@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>양기술 블로그 | chart00</title>
+  <meta charset="UTF-8" />
+  <!-- CSS -->
+    <link rel="stylesheet" href="/Young.github.io/CSS/index.css">
+</head>
+<body>
+  <!-- 헤더(nav) -->
+  <header>
+    <div class="gnb pc">
+      <div>
+        <a href="https://hyunyounga.github.io/Young.github.io/" class="title">
+               <span class="logo">
+                  <img id="logoImg" >
+               </span>
+            </a>
+      </div>
+      <div class="menu">
+               <!-- 추가메뉴 -->
+               <a href="https://hyunyounga.github.io/Young.github.io/">개발 서적 스터디</a>
+         </div>
+    </div>
+  </header>
+  <!-- 헤더(nav) end -->
+  
+  <!-- 메인이미지 -->
+  <div class="main-slider" style="margin-top: 95px;">
+      <div class="swiper-container mainSlider">
+         <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1519px, 0px, 0px);">
+            <div class="swiper-slide" style="width: 100%;">
+          <h1 id="blogTitle" style="display: inblock;">한권으로 읽는 컴퓨터 구조와 프로그래밍 | chart01</h1>
+               <div style="background-image: linear-gradient(to bottom right, #80F5FF, #BCFFB5);">
+          </div>
+            </div>    
+         </div>
+      </div>
+   </div>
+  <!-- 메인이미지 end-->
+  
+  <!-- 게시물 리스트 -->
+  <div class="content-wrap">
+    <div class="category pc">
+      <span>
+        <input id="cat-" type="checkbox" value="ai"> 
+        <label for="cat-ai">개발서적</label>
+      </span>
+    </div>
+    <div class="col col-main">
+      <div class="posts">
+        <div class="item firstpaint">
+          <p class="author">
+            <span>Aug.23.2023</span>
+          </p>
+          <h1>[한 권으로 읽는 컴퓨터 구조와 프로그래밍]
+            <br>1장. 컴퓨터 내부의 언어 체계
+          </h1>
+          <p>컴퓨터는 어떤말을 사용할까
+          </p>
+          <br><hr><br>
+          <h3>1.언어란 무엇인가</h3><br>
+
+          비트는 2진법을 사용한다. 비트상자에는 모스 부호의 점과 선처럼 두 가지 기호 중 하나만 담을 수 있다.<br>
+          자연어와 마찬가지로 기호의 순서가 중요하다.<br>
+          기호라는 개념은 추상적이다. 실제로는 기호가 무엇이든 관계없지만 언어는 문맥 없이는 제대로 작동할 수 없다.<br>
+          비트는 척하기를 상당히 많이 사용한다. 비트들이 파란색을 뜻한다고 가정하자! 라는 식을 자주 볼 것이다.<br>
+          프로그래밍이 실제로 이런 식으로 작동한다. 따라서 표준적인 비트 사용법을 배우더라도 자신에게 적합한 자신만의<br>
+          비트 사용법을 만들어내는 것을 두려워할 필요없다.<br><br>
+
+          <h3>논리연산</h3><br>
+          
+          다른 비트들이 표현하는 내용으로부터 새로운 비트를 만들어내는 이런 동작을 논리연산이라고 한다.<br>
+          기본적인 불리언 연산자는 NOT, AND, OR 세가지에 +XOR이라는 합성 연산이 있다.<br>
+          NOT는 논리적 반대의 의미다.거짓에 NOT을 하면 참이고, 참에 NOT을 하면 거짓이다.<br><br>
+  
+          AND는 둘 이상의 비트에 작용되는데 모두 참이어야 참이고, 하나라도 거짓이면 거짓이다.<br><br>
+  
+          OR는 둘 이상의 비트에 작용한다. 2비트 중 한 비트라도 참이면 결과도 참이다.<br><br>
+  
+          XOR(배타적 exclusive OR)는 두개의 비트가 첫번째 비트와 두번째 비트가 다른 값을 가진 경우에 참이 된다. 참+참은 거짓이다.<br><br>
+  
+          <h3>드모르간의 법칙</h3>
+          a and b는 NOT(NOT a OR NOT b)와 같다.<br>
+          긍정적인 논리에 더해 부정적인 논리를 기술하는 명데를 사용할 때 활용할 수 있다.<br><br>
+  
+          <h3>정수를 비트로 표현하는 방법</h3>
+          <h4>양의 정수 표현</h4><br>
+          우리는 보통 10진수체계를 사용한다. 10의 거듭제곱으로 표현하여 사용할 수 있다.
+          <br><br>
+          <table border="1" width ="300" height="60" align="center"
+                 style="border-collapse: collapse; border-spacing: 0;">
+            <th>10³</th>
+            <th>10²</th>
+            <th>10¹</th>
+            <th>10⁰</th>
+            <tr align ="center">
+                <td>5</td>
+                <td>0</td>
+                <td>2</td>
+                <td>8</td>
+            </tr>
+          </table><br>
+          (base-10) 예를들어 5028을 2진수로 표현한다면,<br><br>
+          <table border="1" width ="500" height="60" align="center"
+                 style="border-collapse: collapse; border-spacing: 0;">
+            <th>2¹²</th>
+            <th>2¹¹</th>
+            <th>2¹⁰</th>
+            <th>2⁹</th>
+            <th>2⁸</th>
+            <th>2⁷</th>
+            <th>2⁶</th>
+            <th>2⁵</th>
+            <th>2⁴</th>
+            <th>2³</th>
+            <th>2²</th>
+            <th>2¹</th>
+            <th>2⁰</th>
+            <tr align ="center">
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+          </table><br>
+          1001110100100이라는 2진수를 표현한다.
+          4096+512+256+128+32+4=5028이다.<br>
+          10진수는 4자리 숫자이고, 2진수는 13비트 수이다.<br>
+          
+          <h4>2진수 덧셈</h4>
+          10진 덧셈은 오른쪽(가장 작은 유효 숫자)에서 왼쪽으로 각 자릿수를 서로 더한다.<br>
+          결과가 9보다 크면 1을 올린다.  2진수는 각 비트를 LSB에서 MSB쪽으로 더하여 결과가 1보다 크면 1을 다음자리 왼쪽으로 올린다.(0=>10) <br>
+          진수이 덧셈은 두 비트를 서로 더한 결과는 두 비트를 XOR한 값과 같고, 올림은 두 비트를 AND 한 값과 같다.<br><br>
+      
+      </div>
+    </div>
+    <!-- 게시물 리스트 end-->
+    <!-- 사이드 카테고리 -->
+      <div class="pc meta-col" style="width: 190px;">
+        <div class="inner-wrapper-sticky"
+             style="position: relative;">
+          <div class="tag">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <p class="sub-title">태그</p>
+            <p><input type="checkbox">
+              <label>
+                <span class="tag-name">한 권으로 읽는 컴퓨터 구조와 프로그래밍</span>
+                <span class="tag-count">(2)</span>
+              </label>
+            </p>
+          </div>
+          <div class="recap">
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          </div>
+        </div>
+      </div>
+      <!-- 사이드 카테고리 end-->
+   </div>
+  </div>
+</body>
+</html>
